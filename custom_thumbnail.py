@@ -22,7 +22,7 @@ except OSError:
 num = 0 
 for f in os.listdir(testfolder):
     if f.endswith('.png') or f.endswith('.jpg') :
-        i = Image.open('/home/changcw/practice/thumbnailproject/{}/{}'.format(testfolder, f))
+        i = Image.open('./{}/{}'.format(testfolder, f))
         fn, fext = os.path.splitext(f)
 
         i.thumbnail(size_custom)
